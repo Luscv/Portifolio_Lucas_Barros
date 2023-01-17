@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #1D1C1C;
+    color: white;
+}
+
+/* Header styles */
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: #1D1C1C;
+}
+
+nav{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.menu-opt{
+    margin: auto;
+    
+}
+
+.menu-opt > a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Page styles */
+.page{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid white;
+}
+
+/* Page one styles */
+
+.page-one{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page-one > section > span{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.page-one > section > span > h1{
+    font-weight: 200;
+    font-size: 100px;
+}
+
+.page-one > section > .my-job{
+    flex-direction: row-reverse;
+    padding-right: 10px; 
+}
+
+.my-job > h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 31px;
+}
+
+/* Page two styles */
+
+.page-two{
+    flex-wrap: wrap; 
+}
+
+.my-info{
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about, .interests, .contact{
+    margin-left: 100px;
+}
+
+.about{
+    padding-top: 50px;
+}
+
+.contact > div > a > p, .contact > div > p{
+    font-weight: 200;
+}
+
+.about > span > p, .interests > h3, .contact > h3, .contact > div > a > p, .contact > div > p{
+    font-size: 1vmax;
+}
+
+.interests > h3, .contact > h3{
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.hashtag-container > p{
+    font-size: 14px;
+}
+
+.hashtag-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 60%;
+}
+
+.hashtag-container{
+    background: linear-gradient(142deg, rgba(86,8,122,1) 0%, rgba(87,51,92,1) 64%);
+    border-radius: 7px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.hashtag-container:hover{
+    background: linear-gradient(142deg, rgba(143,49,186,1) 28%, rgba(128,53,139,1) 75%);
+    transform: scale(1.1);
+    cursor: default;
+}
+
+.contact > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact > div:hover{
+    transform: translate(5%) scale(1.1);
+}
+
+.linkedin > svg{
+    margin-left: 3px;
+}
+
+.contact > div > a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Page two card effect styles */
+
+aside{
+    height: 100vh;
+    width: 40%;
+    display: grid;
+    place-items: center;
+
+}
+
+.card-group, .card{
+    width: 30vmin;
+    aspect-ratio: 5/7;
+}
+
+.card{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 10px;
+    transition: transform 800ms cubic-bezier(.06,.82,.39,.94);
+}
+
+.card:nth-child(1){
+    background-image:url(./assets/project3.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    transform: translate(10%, -3%) rotate(10deg);
+    
+  }
+  
+  .card:nth-child(2){
+    background-image:url(./assets/project2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transform: translate(10%, 3%) rotate(-10deg);
+    
+    
+  }
+  
+  .card:nth-child(3){
+    background-image:url(./assets/project1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-10%, -3%) rotate(-10deg);
+    
+  }
+
+  .card:nth-child(4){
+    background-image: url(./assets/project4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transform: translate(-10%, 3%) rotate(10deg);
+    
+  }
+
+  
+  .card:nth-child(5){
+    background-image: url(./assets/pfp.JPG);
+    background-size: cover;
+  }
+
+  .card-group:hover > .card:nth-child(1){
+    transform: translate(50%, -30%)  rotate(20deg);
+  }
+  
+  .card-group:hover > .card:nth-child(2){
+    transform: translate(50%, 30%) rotate(-20deg);
+  }
+  
+  .card-group:hover > .card:nth-child(3){
+    transform: translate(-50%, -30%) rotate(-20deg);
+  }
+  .card-group:hover > .card:nth-child(4){
+    transform: translate(-50%, 30%) rotate(20deg);
+  }
+
+  .card-group:hover > .card:nth-child(5){
+    transform: scale(1.1);
+  }
+
+border: 1px solid red;
