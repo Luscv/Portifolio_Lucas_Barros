@@ -131,6 +131,7 @@ nav{
     height: 30px;
     text-align: center;
     padding-top: 5px;
+    transition: transform 300ms cubic-bezier(.06,.82,.39,.94);
 }
 
 .hashtag-container:hover{
@@ -144,6 +145,7 @@ nav{
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
+    transition: transform 300ms cubic-bezier(.06,.82,.39,.94);
 }
 
 .contact > div:hover{
@@ -189,56 +191,151 @@ aside{
     
   }
   
-  .card:nth-child(2){
-    background-image:url(./assets/project2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    transform: translate(10%, 3%) rotate(-10deg);
-    
-    
-  }
-  
-  .card:nth-child(3){
-    background-image:url(./assets/project1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    transform: translate(-10%, -3%) rotate(-10deg);
-    
-  }
+.card:nth-child(2){
+background-image:url(./assets/project2.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: bottom;
+transform: translate(10%, 3%) rotate(-10deg);
 
-  .card:nth-child(4){
-    background-image: url(./assets/project4.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    transform: translate(-10%, 3%) rotate(10deg);
-    
-  }
 
-  
-  .card:nth-child(5){
-    background-image: url(./assets/pfp.JPG);
+}
+
+.card:nth-child(3){
+background-image:url(./assets/project1.png);
+background-size: contain;
+background-repeat: no-repeat;
+transform: translate(-10%, -3%) rotate(-10deg);
+
+}
+
+.card:nth-child(4){
+background-image: url(./assets/project4.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: bottom;
+transform: translate(-10%, 3%) rotate(10deg);
+
+}
+
+
+.card:nth-child(5){
+background-image: url(./assets/pfp.JPG);
+background-size: cover;
+}
+
+.card-group:hover > .card:nth-child(1){
+transform: translate(50%, -30%)  rotate(20deg);
+}
+
+.card-group:hover > .card:nth-child(2){
+transform: translate(50%, 30%) rotate(-20deg);
+}
+
+.card-group:hover > .card:nth-child(3){
+transform: translate(-50%, -30%) rotate(-20deg);
+}
+.card-group:hover > .card:nth-child(4){
+transform: translate(-50%, 30%) rotate(20deg);
+}
+
+.card-group:hover > .card:nth-child(5){
+transform: scale(1.1);
+}
+
+
+
+
+
+  /* Page four styles */
+
+.page-four{
+    
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.page-four > h2{
+    padding-bottom: 30px;
+}
+
+.project-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+
+}
+
+.project > h4{
+    font-weight: 100;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.project > p{
+    font-weight: 200;
+    font-size: 10px;
+    color: #A5A5A5;
+}
+
+.project{
+    padding-bottom: 15px;
+}
+
+.project-frame{
+    background-color: rgb(128,53,139);
+    width: 335px;
+    height: 177px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.project-img{
+    width: 335px;
+    height: 177px;
+    border-radius: 5px;
+    transition: transform 600ms cubic-bezier(.06,.82,.39,.94);
+    
+}
+
+.project-one{
+    background: url(./assets/project1.png);
     background-size: cover;
-  }
+}
 
-  .card-group:hover > .card:nth-child(1){
-    transform: translate(50%, -30%)  rotate(20deg);
-  }
-  
-  .card-group:hover > .card:nth-child(2){
-    transform: translate(50%, 30%) rotate(-20deg);
-  }
-  
-  .card-group:hover > .card:nth-child(3){
-    transform: translate(-50%, -30%) rotate(-20deg);
-  }
-  .card-group:hover > .card:nth-child(4){
-    transform: translate(-50%, 30%) rotate(20deg);
-  }
+.project-two{
+    background: url(./assets/project4.png);
+    background-size: cover;
+    background-position: 50%;
+}
 
-  .card-group:hover > .card:nth-child(5){
-    transform: scale(1.1);
-  }
+.project-three{
+    background: url(./assets/project3.png);
+    background-size: cover;
+}
+
+.project-four{
+    background: url(./assets/project2.png);
+    background-size: cover;
+}
+
+.project-five{
+    background: url(./assets/project6.png);
+    background-size: cover;
+}
+
+.project-six{
+    background: url(./assets/project5.png);
+    background-size: cover;
+}
+
+.project-img:hover{
+    transform: translate(3%,-4%);
+}
 
 border: 1px solid red;
