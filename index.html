@@ -116,7 +116,87 @@
             </aside>
         </div>
         <div class="page-three page" id="tecnologias">
+            <div class="tech-hover">
+                <h2>Passe o mouse para saber mais!</h2>
+            </div>
+            <div class="tech-group">
+                <div class="tech-card">
+                    <img class="tech-img" src="./assets/Html 5.png" alt="">
+                    <div class="tech">
+                        
 
+                        <h2>01</h2>
+                        <h3>HTML</h3>
+                        <p>- Syntax</p>
+                        <p>- Forms and validations</p>
+                        <p>- Conventions and best practices</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img class="tech-img" src="./assets/CSS3.png" alt="">
+                    <div class="tech">
+                        
+
+                        <h2>02</h2>
+                        <h3>CSS</h3>
+                        <p>- Layouts</p>
+                        <p>     - Floats</p>
+                        <p>     - Positioning</p>
+                        <p>     - Display e Box model</p>
+                        <p>     - Grid e Flexbox</p>
+                        <p>- Tailwind CSS</p>
+                        <P>- PostCSS</P>
+                        
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img class="tech-img" src="./assets/js.png" alt="">
+                    <div class="tech">
+                        
+
+                        <h2>03</h2>
+                        <h3>Javascript</h3>
+                        <p>- DOM Manipulation</p>
+                        <p>- Fetch API</p>
+                        <p>- ES6+ and modular Javascript</p>
+                        <p>- Concepts as Hoisting, scope, event bubbling...</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img class="tech-img" src="./assets/React Native.png" alt="">
+                    <div class="tech">
+                        
+                            
+                        <h2>04</h2>
+                        <h3>React</h3>
+                        <p>- Syntax and basics</p>
+                        <p>- React Native</p>
+                        <p>- Nativewind</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img  class="tech-img" src="./assets/nodejs.png" alt="">
+                    <div class="tech">
+                        
+
+                        <h2>05</h2>
+                        <h3>NodeJs</h3>
+                        <p>- Syntax and basics</p>
+                        <p>- Fastify</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img class="tech-img" src="./assets/TypeScript.png" alt="">
+                    <div class="tech">
+                        
+
+                        <h2>06</h2>
+                        <h3>Typescript</h3>
+                        <p>- Syntax and basics</p>
+                    </div>
+                </div>
+                
+            </div>
         </div>
         <div class="page-four page" id="projetos">
             <div class="project-group">
@@ -183,5 +263,14 @@
 
         </div>
     </main>
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".tech-card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2,
+        });
+    </script>
 </body>
 </html>
