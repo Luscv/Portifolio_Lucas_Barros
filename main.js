@@ -12,3 +12,12 @@ function Typing(){
 }
 
 Typing();
+
+//Animar barra do menu
+
+$(document).ready(function(){
+    $('li').on('click', function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    })
+})
