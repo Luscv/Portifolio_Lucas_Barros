@@ -115,7 +115,8 @@ nav{
 }
 
 .hashtag-container > p{
-    font-size: 14px;
+    padding-top: 3px;
+    font-size: 10px;
 }
 
 .hashtag-group{
