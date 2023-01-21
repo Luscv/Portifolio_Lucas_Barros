@@ -32,7 +32,7 @@
 > Página com uma introdução sobre mim, contato e soft skills
 
 - Animação nos cards <sub>(lado direito)</sub> feita com CSS [^note]
-- Soft skills e contato com efeitos básicos de hover e scale
+- Soft skills e contato com efeitos básicos on hover e scale
 
 [^note]: Efeito aplicado nos cards, descrito [aqui](https://github.com/Luscv/Swipe_cards)
 
