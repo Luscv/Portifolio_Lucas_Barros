@@ -69,7 +69,7 @@ nav{
 }
 
 .page-one > section > .my-job{
-    flex-direction: row-reverse;
+    padding-left: 48%;
     padding-right: 10px; 
 }
 
